@@ -1,12 +1,12 @@
 "use strict";
 
 const passwordBtn = document.querySelector("#password-btn");
-
 passwordBtn.addEventListener("click", generatePassword);
 
 function generatePassword() {
   const chars =
     "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
   const passwordLength = 12;
   let password1 = "";
   let password2 = "";

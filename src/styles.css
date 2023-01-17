@@ -4,18 +4,15 @@ body {
 
 .container {
   background-color: #ecfdf5;
-  max-width: 550px;
   height: 550px;
   margin: 64px auto;
+  max-width: 550px;
 }
 
 h1 {
   color: #2b283a;
   font-family: "Karla", sans-serif;
-  padding-top: 115px;
-  padding-left: 52px;
-  padding-right: 144px;
-  padding-bottom: 10px;
+  padding: 115px 144px 10px 52px;
   margin-bottom: 0;
 }
 
@@ -28,23 +25,20 @@ p {
   font-size: 20px;
   font-family: "Karla", sans-serif;
   font-weight: 400;
-  margin-left: 52px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 0 0 52px;
 }
 
 button {
-  width: 190px;
-  height: 42px;
-  margin-left: 52px;
-  padding: 9px, 17px, 9px, 15px;
   background-color: #10b981;
+  border: none;
+  border-radius: 6px;
   color: #ffffff;
   font-size: 16px;
+  height: 42px;
   line-height: 24px;
-  border-radius: 6px;
-  border: none;
-  margin-top: 60px;
+  margin: 60px 0 0 52px;
+  padding: 9px, 17px, 9px, 15px;
+  width: 190px;
 }
 
 button:hover {
@@ -52,22 +46,18 @@ button:hover {
 }
 
 hr {
-  margin-top: 35px;
-  margin-left: 52px;
-  margin-right: 52px;
+  margin: 35px 52px 0 52px;
 }
 
-input.password-field {
-  border-radius: 6px;
+input {
   background-color: #273549;
-  width: 206px;
-  height: 39px;
-  margin-left: 52px;
   border: none;
-  margin-top: 35px;
-
+  border-radius: 6px;
   font-size: 16px;
+  height: 39px;
+  margin: 35px 0 0 52px;
   text-align: center;
+  width: 206px;
 }
 
 input::placeholder {
@@ -80,13 +70,12 @@ input:last-child {
 
 @media (max-width: 568px) {
   .container {
-    height: auto;
     margin: 0;
     text-align: center;
   }
+
   h1 {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 75px 0 20px 0;
   }
 
   p {
@@ -108,12 +97,11 @@ input:last-child {
     display: none;
   }
 
-  input.password-field {
+  input {
     margin-left: 0;
   }
 
   input:last-child {
-    margin-top: 10px;
-    margin-bottom: 25px;
+    margin: 10px 0 0 0;
   }
 }
