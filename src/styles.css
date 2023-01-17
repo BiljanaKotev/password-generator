@@ -4,7 +4,7 @@ body {
 
 .container {
   background-color: #ecfdf5;
-  width: 550px;
+  max-width: 550px;
   height: 550px;
   margin: 64px auto;
 }
@@ -57,7 +57,7 @@ hr {
   margin-right: 52px;
 }
 
-.password-field {
+input.password-field {
   border-radius: 6px;
   background-color: #273549;
   width: 206px;
@@ -65,9 +65,55 @@ hr {
   margin-left: 52px;
   border: none;
   margin-top: 35px;
+
+  font-size: 16px;
+  text-align: center;
+}
+
+input::placeholder {
   color: #5def92;
 }
 
 input:last-child {
   margin-left: 24px;
+}
+
+@media (max-width: 568px) {
+  .container {
+    height: auto;
+    margin: 0;
+    text-align: center;
+  }
+  h1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  p {
+    margin-left: 0;
+  }
+
+  button {
+    margin-left: 0;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  hr {
+    display: none;
+  }
+
+  input.password-field {
+    margin-left: 0;
+  }
+
+  input:last-child {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
 }
