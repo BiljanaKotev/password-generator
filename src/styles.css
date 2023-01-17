@@ -59,9 +59,6 @@ input {
   margin: 35px 0 0 52px;
   text-align: center;
   width: 206px;
-}
-
-input::placeholder {
   color: #5def92;
 }
 
