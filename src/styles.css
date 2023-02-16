@@ -56,7 +56,7 @@ input {
   border-radius: 6px;
   font-size: 16px;
   height: 39px;
-  margin: 35px 0 0 52px;
+  margin: 35px 0 0 25px;
   text-align: center;
   width: 206px;
   color: #5def92;
@@ -64,6 +64,23 @@ input {
 
 input:last-child {
   margin-left: 24px;
+}
+
+.input-container {
+  display: flex;
+}
+
+.pw-1,
+.pw-2 {
+  position: relative;
+}
+
+.pw-1 i,
+.pw-2 i {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  color: #41597a;
 }
 
 @media (max-width: 568px) {

@@ -97,7 +97,7 @@ let characters = [
 // Elements
 const password1 = document.getElementById("password-one");
 const password2 = document.getElementById("password-two");
-const passwordLength = 12;
+const passwordLength = 15;
 const passwordBtn = document.getElementById("password-btn");
 passwordBtn.addEventListener("click", generatePassword);
 
@@ -113,3 +113,29 @@ function generatePassword() {
     password2.value = randomPass2;
   }
 }
+
+const clipBoardPw1 = document.getElementById("clipboard-pw1");
+const clipBoardPw2 = document.getElementById("clipboard-pw2");
+
+// function copyToClipBoard() {
+//   const copyText = document.getElementById("password-one").value;
+//   navigator.clipboard.writeText(copyText).then(() => {
+//     alert("copied to clipboard");
+//   });
+// }
+
+// clipBoardPw1.addEventListener("click", copyToClipBoard);
+
+clipBoardPw1.addEventListener("click", function () {
+  const copyText = document.getElementById("password-one").value;
+  navigator.clipboard.writeText(copyText).then(() => {
+    alert("copied to clipboard");
+  });
+});
+
+clipBoardPw2.addEventListener("click", function () {
+  const copyText = document.getElementById("password-two").value;
+  navigator.clipboard.writeText(copyText).then(() => {
+    alert("copied to clipboard");
+  });
+});
