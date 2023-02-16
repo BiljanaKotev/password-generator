@@ -117,15 +117,6 @@ function generatePassword() {
 const clipBoardPw1 = document.getElementById("clipboard-pw1");
 const clipBoardPw2 = document.getElementById("clipboard-pw2");
 
-// function copyToClipBoard() {
-//   const copyText = document.getElementById("password-one").value;
-//   navigator.clipboard.writeText(copyText).then(() => {
-//     alert("copied to clipboard");
-//   });
-// }
-
-// clipBoardPw1.addEventListener("click", copyToClipBoard);
-
 clipBoardPw1.addEventListener("click", function () {
   const copyText = document.getElementById("password-one").value;
   navigator.clipboard.writeText(copyText).then(() => {
